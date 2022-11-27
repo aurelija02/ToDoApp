@@ -71,8 +71,6 @@ async function savedata() {
     let myEmail = document.getElementById("email").value;
     let myId = myName+"_"+idNumb;
 
-    //cia reik ifo jei kartojasi ID
-
     await fetch("https://testapi.io/api/aurelija02/resource/userTable", {
         method: "POST",
         headers: {
@@ -127,10 +125,5 @@ function checkdata(e) {
         logerr.textContent = "There is no user with this name. Please register."
         logerr.style.display = "block"
     }
-
-    // usersArray.forEach(el => {
-        
-
-    // })
 
 }
