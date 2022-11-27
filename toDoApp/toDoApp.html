@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="toDoAppStyly.css">
+    <script src="toDoAppJs.js" defer></script>
+    
+    <title>Document</title>
+</head>
+<body>
+    <h2 class="welcome2">Welcome</h2>
+    <h2 class="userHead" id="userHead"></h2>
+    <div class="btnContainer" id="btnContainer">
+        <div><button id="addbtn" class="addbtn">CREATE TASK</button></div>
+        <br><br>
+    </div>
+
+    <div id="addTaskContainer" class="addTaskContainer">
+
+        <div id="addDivContent">
+            <h5 class="createHeader">CREATE A TASK:</h5>
+            <form id="taskform" class="taskform" action="">
+            
+            <input type="text" id="type" placeholder="Type: Shop" required>
+            <input type="text" id="content" placeholder="e.g. Buy milk" required>
+            <input type="date" id="endDate" placeholder="End Date: 2000-01-01" required>
+    
+            <input type="submit" id="addTask" class="addTask" value="ADD TASK">
+        
+        </form>
+        </div>
+
+    </div>
+
+    <div id="tasksListContainer" class="tasksListContainer">
+        <h3 class="head3">Tasks List</h3>
+
+        <div id="tasks" class="tasks">
+
+            <!-- <div class="taskContent" id="taskContent">
+
+                 <div content>
+                 <input type="text" class="text" > 
+                 </div>
+
+                 actions
+            </div>
+            
+            <div class="actions" id="actions">
+                <button id="editbtn" class="editbtn">Edit</button>
+                <button id="deletebtn" class="deletebtn">Delete</button>
+            </div> -->
+
+        </div>
+    </div>
+
+
+</body>
+</html>

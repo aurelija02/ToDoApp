@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleMain.css">
+    <script src="myjsMain.js" defer></script>
+    
+    <title>Registration page</title>
+</head>
+<body>
+   
+<h1 id="welcome">Welcome to your TODO APP</h1>
+
+<div class="btnContainer" id="btnContainer">
+    <div><button id="loginbtn" class="loginbtn">LOGIN</button></div>
+    <div><button id="regbtn" class="regbtn">REGISTER</button></div>
+</div>
+
+<div id="regModal" class="regModal">
+    
+    <div class="modalForm">
+        <div id="formHeader" class="formHeader">
+            <span class="close">&times;</span>
+            <h2>Please register</h2>
+            <p>Please fill in this form to create an account.</p>
+            <hr>
+        </div>
+        <form id="regFormId" class="regForm" action="">
+            
+            <label for="text"><b>Name</b></label>
+            <input type="text" id="name" placeholder="Name" required>
+            
+            <label for="text"><b>Surname</b></label>
+            <input type="text" id="surname" placeholder="Surname" required>
+            
+            <label for="text"><b>Email</b></label>
+            <input type="text" id="email" placeholder="Email" required>
+    
+            <input type="submit" id="submitRegForm" value="Register">
+        
+            <p id="error" class="error"></p>
+
+        </form>
+    </div>
+</div>
+
+<div id="logModal" class="logModal">
+    
+    <div class="modalForm">
+        <div id="formHeader" class="formHeader">
+            <span class="close2">&times;</span>
+            <h2>Login to your account</h2>
+            <p>Please fill in this form to access yur account.</p>
+            <hr>
+        </div>
+        <form id="logFormId" class="logForm" action="">
+            
+            <label for="text"><b>Name</b></label>
+            <input type="text" id="name2" placeholder="Name" required>
+
+            <label for="text"><b>Surname</b></label>
+            <input type="text" id="surname2" placeholder="Surname" required>
+    
+            <input type="submit" id="submitLogForm" value="Login">
+            <p id="logerror" class="logerror"></p>
+
+        </form>
+    </div>
+</div>
+
+
+
+</body>
+</html>
